@@ -8,6 +8,8 @@ import json
 from functools import cache
 from pathlib import Path
 
+from app.config import api_error_message
+
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 MAX_RESULTS = 3
 
@@ -77,3 +79,50 @@ def get_lecture_summary(lecture: int) -> str:
         available = sorted(p.stem for p in (DATA_DIR / "lectures").glob("*.md"))
         return f"النقاط الرئيسة لـ Lecture {lecture:02d} غير متاحة بعد. المحاضرات المتاحة: {', '.join(available)}"
     return path.read_text(encoding="utf-8")
+
+
+def search_materials(query: str) -> str:
+    """ابحث في مواد المحاضرات الرئيسة من Lecture 01 إلى Lecture 03، وأعِد نصوص الصفحات ذات الصلة وعناوينها وأرقام صفحاتها.
+
+    حدّد المحتوى الذي تريد البحث عنه في query.
+    """
+    from google.genai.errors import APIError
+    import sqlite3
+    from app.retrieval import search
+
+    try:
+        return json.dumps({"results": search(query)}, ensure_ascii=False)
+    except (ValueError, FileNotFoundError, sqlite3.Error) as e:
+        return json.dumps({"error": str(e), "results": []}, ensure_ascii=False)
+    except APIError as e:
+        return json.dumps({"error": api_error_message(e.code), "results": []}, ensure_ascii=False)
+
+
+def browse_tree(node_id: str | None = None) -> str:
+    """أعِد فهرس المحتويات والجملة الأولى من كل صفحة. عند تحديد معرّف صفحة، أعِد نصها الكامل.
+
+    اترك node_id دون تحديد في البداية، ثم تتبّع الفهرس باستخدام المعرّفات المُعادة.
+    """
+    from app.retrieval import browse_tree as browse
+
+    try:
+        return json.dumps(browse(node_id), ensure_ascii=False)
+    except (ValueError, OSError) as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
+
+
+def search_graph(query: str) -> str:
+    """ابحث في المواد، وتتبّع الصفحات السابقة واللاحقة والمصطلحات المشتركة لإعادة نصوص الصفحات ذات الصلة ومعلومات الاستشهاد بها.
+
+    حدّد المحتوى الذي تريد البحث عنه في query.
+    """
+    import sqlite3
+    from google.genai.errors import APIError
+    from app.retrieval import search_graph as search
+
+    try:
+        return json.dumps(search(query), ensure_ascii=False)
+    except (ValueError, OSError, sqlite3.Error) as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
+    except APIError as e:
+        return json.dumps({"error": api_error_message(e.code)}, ensure_ascii=False)
