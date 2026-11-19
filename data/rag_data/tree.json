@@ -1965,6 +1965,356 @@
       ]
     },
     {
+      "id": "lec01-exercise",
+      "kind": "document",
+      "title": "المحاضرة 1: التمارين والواجبات — تهيئة بيئة التطوير واستخدام نموذج لغوي كبير",
+      "children": [
+        {
+          "id": "lec01-exercise-p001",
+          "kind": "page",
+          "title": "تهيئة بيئة التطوير واستخدام نموذج لغوي كبير",
+          "page": 1
+        },
+        {
+          "id": "lec01-exercise-p002",
+          "kind": "page",
+          "title": "أهداف هذه الجلسة",
+          "page": 2
+        },
+        {
+          "id": "lec01-exercise-p003",
+          "kind": "page",
+          "title": "المطلوب :حسابان شخصيان",
+          "page": 3
+        },
+        {
+          "id": "lec01-exercise-p004",
+          "kind": "page",
+          "title": "مسار التمرين( 45 دقيقة)",
+          "page": 4
+        },
+        {
+          "id": "lec01-exercise-p005",
+          "kind": "page",
+          "title": "الخطوة 1 عمل fork لمستودع الدورة",
+          "page": 5
+        },
+        {
+          "id": "lec01-exercise-p006",
+          "kind": "page",
+          "title": "الخطوة 2 إصدار مفتاح Gemini API",
+          "page": 6
+        },
+        {
+          "id": "lec01-exercise-p007",
+          "kind": "page",
+          "title": "الخطوة 3 التسجيل في Codespaces secret",
+          "page": 7
+        },
+        {
+          "id": "lec01-exercise-p008",
+          "kind": "page",
+          "title": "الخطوة 4 تشغيل Codespaces",
+          "page": 8
+        },
+        {
+          "id": "lec01-exercise-p009",
+          "kind": "page",
+          "title": "الخطوة 5 سؤال نموذج LLM",
+          "page": 9
+        },
+        {
+          "id": "lec01-exercise-p010",
+          "kind": "page",
+          "title": "الخطوة 5 نقاط المالحظة",
+          "page": 10
+        },
+        {
+          "id": "lec01-exercise-p011",
+          "kind": "page",
+          "title": "الخطوة 6 عرض عدد الرموز( tokens ) باستخدام Copilot",
+          "page": 11
+        },
+        {
+          "id": "lec01-exercise-p012",
+          "kind": "page",
+          "title": "الخطوة 7 إنشاء فرع وتقديم PR",
+          "page": 12
+        },
+        {
+          "id": "lec01-exercise-p013",
+          "kind": "page",
+          "title": "الخطوة 8 إيقاف Codespaces",
+          "page": 13
+        },
+        {
+          "id": "lec01-exercise-p014",
+          "kind": "page",
+          "title": "الواجب :يكفي إنجاز واحد",
+          "page": 14
+        },
+        {
+          "id": "lec01-exercise-p015",
+          "kind": "page",
+          "title": "تقديم الواجب وقواعده",
+          "page": 15
+        },
+        {
+          "id": "lec01-exercise-p016",
+          "kind": "page",
+          "title": "تبديل النموذج وتنبيهات",
+          "page": 16
+        },
+        {
+          "id": "lec01-exercise-p017",
+          "kind": "page",
+          "title": "تمهيد المحاضرة 2 :أساسيات النماذج الأساسية",
+          "page": 17
+        },
+        {
+          "id": "lec01-exercise-p018",
+          "kind": "page",
+          "title": "الخالصة :ما أنجزناه اليوم والمحاضرة القادمة",
+          "page": 18
+        },
+        {
+          "id": "lec01-exercise-p019",
+          "kind": "page",
+          "title": "مواد إضافية",
+          "page": 19
+        },
+        {
+          "id": "lec01-exercise-p020",
+          "kind": "page",
+          "title": "لماذا نحتاج ملفات السياق؟",
+          "page": 20
+        },
+        {
+          "id": "lec01-exercise-p021",
+          "kind": "page",
+          "title": "الملفات الرئيسية وطريقة قراءتها",
+          "page": 21
+        },
+        {
+          "id": "lec01-exercise-p022",
+          "kind": "page",
+          "title": "الحد الأدنى :ما يُضمَّن وما لا يُضمَّن",
+          "page": 22
+        },
+        {
+          "id": "lec01-exercise-p023",
+          "kind": "page",
+          "title": "تعليمات تُقرأ دائمًا، و Skill يُقرأ حسب المهمة",
+          "page": 23
+        },
+        {
+          "id": "lec01-exercise-p024",
+          "kind": "page",
+          "title": "أدلة الفعالية :الكتابة لا تعني التحسن دائمًا",
+          "page": 24
+        },
+        {
+          "id": "lec01-exercise-p025",
+          "kind": "page",
+          "title": "لا تتوقف عند الكتابة",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "id": "lec02-exercise",
+      "kind": "document",
+      "title": "المحاضرة 2: التمارين والواجبات — تعلّم تنسيق الإجابات باستخدام LoRA وقارن النتائج قبل التدريب وبعده",
+      "children": [
+        {
+          "id": "lec02-exercise-p001",
+          "kind": "page",
+          "title": "تعلّم تنسيق الإجابات باستخدام LoRA وقارن النتائج قبل التدريب وبعده",
+          "page": 1
+        },
+        {
+          "id": "lec02-exercise-p002",
+          "kind": "page",
+          "title": "مراجعة واجب المحاضرة الأولى",
+          "page": 2
+        },
+        {
+          "id": "lec02-exercise-p003",
+          "kind": "page",
+          "title": "شرح المستوى الأساسي: قد يعطي السؤال نفسه إجابات مختلفة",
+          "page": 3
+        },
+        {
+          "id": "lec02-exercise-p004",
+          "kind": "page",
+          "title": "شرح التنفيذ: ماذا يعني الاحتفاظ بسجل المحادثة؟",
+          "page": 4
+        },
+        {
+          "id": "lec02-exercise-p005",
+          "kind": "page",
+          "title": "شرح التنفيذ: ملف app/ask.py قبل التعديل",
+          "page": 5
+        },
+        {
+          "id": "lec02-exercise-p006",
+          "kind": "page",
+          "title": "شرح التنفيذ: الدالة chat() بعد التعديل (مثال الحل)",
+          "page": 6
+        },
+        {
+          "id": "lec02-exercise-p007",
+          "kind": "page",
+          "title": "شرح التنفيذ: ما الذي يُرسل في كل مرة؟",
+          "page": 7
+        },
+        {
+          "id": "lec02-exercise-p008",
+          "kind": "page",
+          "title": "شرح المستوى المتقدم: زمن الاستجابة وعدد الرموز وحدود المعدل",
+          "page": 8
+        },
+        {
+          "id": "lec02-exercise-p009",
+          "kind": "page",
+          "title": "المشكلات الشائعة والتنبيهات",
+          "page": 9
+        },
+        {
+          "id": "lec02-exercise-p010",
+          "kind": "page",
+          "title": "التمهيد لتمرين اليوم",
+          "page": 10
+        },
+        {
+          "id": "lec02-exercise-p011",
+          "kind": "page",
+          "title": "أهداف هذه الجلسة",
+          "page": 11
+        },
+        {
+          "id": "lec02-exercise-p012",
+          "kind": "page",
+          "title": "ما الذي نتحقق منه؟",
+          "page": 12
+        },
+        {
+          "id": "lec02-exercise-p013",
+          "kind": "page",
+          "title": "المادة: أسئلة شائعة لدورة وهمية والمخرجات المطلوبة",
+          "page": 13
+        },
+        {
+          "id": "lec02-exercise-p014",
+          "kind": "page",
+          "title": "تقسيم البيانات: جمل التدريب لا تظهر في التقييم",
+          "page": 14
+        },
+        {
+          "id": "lec02-exercise-p015",
+          "kind": "page",
+          "title": "جانبا التقييم: التنسيق والمحتوى",
+          "page": 15
+        },
+        {
+          "id": "lec02-exercise-p016",
+          "kind": "page",
+          "title": "التحضير المسبق (اختياري، 5 دقائق) والأدوات",
+          "page": 16
+        },
+        {
+          "id": "lec02-exercise-p017",
+          "kind": "page",
+          "title": "مسار التمرين (45 دقيقة)، بدءًا بمراجعة واجب المحاضرة الأولى",
+          "page": 17
+        },
+        {
+          "id": "lec02-exercise-p018",
+          "kind": "page",
+          "title": "الخطوتان 1 و2: أنشئ نسختك واختر T4 GPU",
+          "page": 18
+        },
+        {
+          "id": "lec02-exercise-p019",
+          "kind": "page",
+          "title": "الخطوة 3: التقييم قبل التدريب في الأقسام 0 إلى 3 (نحو 5 دقائق)",
+          "page": 19
+        },
+        {
+          "id": "lec02-exercise-p020",
+          "kind": "page",
+          "title": "الخطوة 4: التدريب باستخدام LoRA في القسم 4 (4–5 دقائق)",
+          "page": 20
+        },
+        {
+          "id": "lec02-exercise-p021",
+          "kind": "page",
+          "title": "الفرق بين LoRA وQLoRA",
+          "page": 21
+        },
+        {
+          "id": "lec02-exercise-p022",
+          "kind": "page",
+          "title": "الخطوة 5: التقييم بعد التدريب في القسم 5 ومقارنة النتائج",
+          "page": 22
+        },
+        {
+          "id": "lec02-exercise-p023",
+          "kind": "page",
+          "title": "الخطوة 5: أسئلة المعرفة في القسم 6",
+          "page": 23
+        },
+        {
+          "id": "lec02-exercise-p024",
+          "kind": "page",
+          "title": "الخطوتان 6 و7: أنشئ result.json وقدّمه واحذف بيئة التشغيل",
+          "page": 24
+        },
+        {
+          "id": "lec02-exercise-p025",
+          "kind": "page",
+          "title": "إذا تعذر التدريب (القسم 4b من الدفتر)",
+          "page": 25
+        },
+        {
+          "id": "lec02-exercise-p026",
+          "kind": "page",
+          "title": "اختياري: التحميل بتكميم 4 بت (القسم 8، نحو دقيقتين)",
+          "page": 26
+        },
+        {
+          "id": "lec02-exercise-p027",
+          "kind": "page",
+          "title": "الواجب: يكفي إكمال مستوى واحد",
+          "page": 27
+        },
+        {
+          "id": "lec02-exercise-p028",
+          "kind": "page",
+          "title": "طريقة العمل في الواجب والتنبيهات",
+          "page": 28
+        },
+        {
+          "id": "lec02-exercise-p029",
+          "kind": "page",
+          "title": "تسليم الواجب",
+          "page": 29
+        },
+        {
+          "id": "lec02-exercise-p030",
+          "kind": "page",
+          "title": "تمهيد للمحاضرة الثالثة",
+          "page": 30
+        },
+        {
+          "id": "lec02-exercise-p031",
+          "kind": "page",
+          "title": "خلاصة إنجاز اليوم والمحاضرة التالية",
+          "page": 31
+        }
+      ]
+    },
+    {
       "id": "lec03-exercise",
       "kind": "document",
       "title": "بناء وكيل لدعم التعلم",

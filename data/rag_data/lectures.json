@@ -2220,6 +2220,420 @@
     ]
   },
   {
+    "id": "lec01-exercise",
+    "title": "المحاضرة 1: التمارين والواجبات — تهيئة بيئة التطوير واستخدام نموذج لغوي كبير",
+    "content": [
+      {
+        "section": "جميع الشرائح",
+        "content": [
+          {
+            "id": "lec01-exercise-p001",
+            "title": "تهيئة بيئة التطوير واستخدام نموذج لغوي كبير",
+            "page": 1,
+            "content": "تهيئة بيئة التطوير واستخدام نموذج لغوي كبير\nالدورة العملية في هندسة الذكاء الاصطناعي 2026\n المحاضرة 1\n |التمارين والواجبات\nمقدمة في هندسة الذكاء الاصطناعي والبرمجة بمساعدة الذكاء الاصطناعي\n2026/10/19 التمرين :\nYoshiaki Sato\n افتح fork\n الخاص بك في Codespaces\n ، وجهّز Gemini API و GitHub Copilot\n لالستخدام، ثم قدّم عملك عبر PR\nيُحظر التصوير أو الإفصاح ألطراف ثالثة دون إذن.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 1"
+          },
+          {
+            "id": "lec01-exercise-p002",
+            "title": "أهداف هذه الجلسة",
+            "page": 2,
+            "content": "أهداف هذه الجلسة\nنوحّد في هذه الجلسة بيئة التطوير وطريقة التقديم المستخدمتين في المحاضرات التالية.\n1\n فتح fork\n الخاص بك في Codespaces\n واستدعاء\nGemini API\n2\n تعديل الكود قليالا باستخدام GitHub Copilot\n3\n تقديم العمل عبر PR\n من فرع العمل(\n وبالطريقة نفسها في\nالمحاضرات التالية)\nالأدوات:\nGitHub Codespaces\n(بيئة تطوير تُفتح في المتصفح)، و Gemini API\n(\n نموذج LLM\n من Google\n)، و GitHub Copilot\n(أداة برمجة بالذكاء الاصطناعي.)\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 2"
+          },
+          {
+            "id": "lec01-exercise-p003",
+            "title": "المطلوب :حسابان شخصيان",
+            "page": 3,
+            "content": "المطلوب :حسابان شخصيان\n نستخدم حسابَي GitHub و Google لتقديم الواجبات وإجراء التمارين.\n حساب GitHub شخصي\nالاستخدام:\nfork و Codespaces و Copilot و PR\n بإنشاء حساب GitHub\n يمكنك أيضا استخدام البيئة الافتراضية Codespaces\n والوكيل\nCopilot\n.\n حساب Google شخصي\nالاستخدام:\nGoogle AI Studio\n(\n إصدار مفتاح Gemini API\n)\n يتيح لك إجراء تمارين باستخدام API\n لنموذج LLM\n.\nجهّز كليهما بحساب شخصي\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 3"
+          },
+          {
+            "id": "lec01-exercise-p004",
+            "title": "مسار التمرين( 45 دقيقة)",
+            "page": 4,
+            "content": "مسار التمرين( 45 دقيقة)\nمسار التمرين(\n45 دقيقة)\n نُنفّذ 8\n خطوات بالترتيب، من fork\n إلى إيقاف Codespaces\n.\n1\n عمل fork لمستودع الدورة 5\n سؤال نموذج LLM الخام\n2\n إصدار مفتاح Gemini API\n6\n عرض عدد الرموز(\ntokens\n )\n باستخدام Copilot\n3\n التسجيل في Codespaces secret\n7\n إنشاء فرع وتقديم PR\n4\n تشغيل Codespaces\n8\n إيقاف Codespaces\n1\n إلى 4 تجهيز البيئة 5\n إلى 8\n استخدام LLM و Copilot، ثم التقديم والتنظيف\nانتبه للترتيب:\n سجّل secret\n في الخطوة 3\n قبل تشغيل Codespaces\n في الخطوة 4\n.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 4"
+          },
+          {
+            "id": "lec01-exercise-p005",
+            "title": "الخطوة 1 عمل fork لمستودع الدورة",
+            "page": 5,
+            "content": "الخطوة 1 عمل fork لمستودع الدورة\nالخطوة 1\n عمل fork لمستودع الدورة\n من زر Fork\n أعلى يمين مستودع الدورة، أنشئ fork في حسابك.\n1\nافتح مستودع الدورة:\nhttps://github.com/matsuolab/lecture-ai-engineering-2026-ar\n2\n اضغط Fork أعلى اليمين\n3\n اختر حسابك في Owner\n ، ثم اضغط Create fork\n4\n تأكد من ظهور fork تحت حسابك\nالأصل\nمستودع الدورة\nmatsuolab/lecture-ai-engineering-2026-ar\n↓ Fork\nfork الخاص بك\n<حسابك>\n/\n<اسم المستودع>\nCodespaces و commit و push و PR كلها هنا\n نفّذ كل العمل التالي في fork الخاص بك .\n لا تقدّم PR إلى مستودع الدورة.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 5"
+          },
+          {
+            "id": "lec01-exercise-p006",
+            "title": "الخطوة 2 إصدار مفتاح Gemini API",
+            "page": 6,
+            "content": "الخطوة 2 إصدار مفتاح Gemini API\nالخطوة 2\n إصدار مفتاح Gemini API\n أنشئ مفتاح API\n في Google AI Studio وانسخه .\n ستستخدمه في الخطوة 3\n.\n1\n افتح Google AI Studio\n بحساب Google الشخصي :\nhttps://aistudio.google.com/apikey\n2\n أنشئ مفتاح API\n3\n انسخ المفتاح الذي أنشأته(\n وسجّله مباشرة في الخطوة 3\n)\nأماكن لا تلصق فيها المفتاح\n•الكود\n•المحادثة\n•\n الإيداع(\ncommit\n)\n مفتاح API معلومة سرية .لا تلصقه في الكود أو المحادثة أو الإيداعات.\n إذا تسرّب، فاحذفه من AI Studio وأنشئ مفتاحًا جديدًا.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 6"
+          },
+          {
+            "id": "lec01-exercise-p007",
+            "title": "الخطوة 3 التسجيل في Codespaces secret",
+            "page": 7,
+            "content": "الخطوة 3 التسجيل في Codespaces secret\nالخطوة 3\n التسجيل في Codespaces secret\n لا تكتب مفتاح API\n في الكود، بل سجّله كـ Codespaces secret\n.\nSettings\n→\nCodespaces\n→\nSecrets\n→\nNew secret\nانتبه :\n هناك Settings\n الخاصة بـ GitHub و Settings\n الخاصة بالمستودع الذي عملت له fork، ومن السهل الخلط بينهما.\n هنا يجب الإعداد من Settings\n الخاصة بـ GitHub\n.\nالحقل\nالقيمة المُدخلة\nName\nGEMINI_API_KEY\nValue\n مفتاح الخطوة 2\nRepository access\n اختر fork الخاص بك\n سجّله قبل تشغيل Codespaces\n .\n إذا سجّلته بعد التشغيل، فيلزم إعادة تشغيل Codespaces\n.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nالمسار في GitHub: صورة الملف الشخصي أعلى اليمين ← Settings ← Codespaces ← Secrets ← New secret.",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 7"
+          },
+          {
+            "id": "lec01-exercise-p008",
+            "title": "الخطوة 4 تشغيل Codespaces",
+            "page": 8,
+            "content": "الخطوة 4 تشغيل Codespaces\nالخطوة 4\n تشغيل Codespaces\n أنشئ Codespaces\n في fork الخاص بك، وتأكد من نجاح الاختبارات في الطرفية.\n1\n اضغط Code\n في صفحة fork الخاص بك\n2\n اختر Codespaces\n ، ثم اضغط Create codespace on main\n3 أول مرة :يستغرق التجهيز بضع دقائق\n4 نفّذ الأمر التالي في الطرفية وتأكد من نجاح الاختبارات\nuv run pytest -q\n صفحة fork الخاص بك\n لقطة شاشة من GitHub\n يُوصى بجهاز 2-core\n(القيمة الافتراضية:)كلما زادت الأنوية استُهلكت الحصة المجانية أسرع .\n الحصة المجانية والإيقاف في الخطوة 8\n.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nفي لقطة شاشة Codespaces تظهر العناوين: «Your workspaces in the cloud» و«You don't have any codespaces with this repository checked out» و«Learn more about codespaces».",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 8"
+          },
+          {
+            "id": "lec01-exercise-p009",
+            "title": "الخطوة 5 سؤال نموذج LLM",
+            "page": 9,
+            "content": "الخطوة 5 سؤال نموذج LLM\nاسأل عن مصطلح عام وعن أمر خاص بالدورة، ولاحظ اختلاف الإجابات.\nمصطلح عام: يتوقع أن تكون الإجابة صحيحة في الغالب.\nuv run python -m app.ask \"ما هو LoRA؟\"\nسؤال خاص بالدورة: «المستويات الثلاثة» للواجب.\nuv run python -m app.ask \"ما هي المستويات الثلاثة في واجبات دورة AIE2026؟\"\nالنموذج الأساسي لا يعرف تفاصيل الدورة، فقد يقول «لا أعرف» أو يقدم إجابة عامة تبدو مقنعة.\nالمعلومة الصحيحة في homework-levels داخل data/glossary.json. قارنها بإجابة النموذج.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 9"
+          },
+          {
+            "id": "lec01-exercise-p010",
+            "title": "الخطوة 5 نقاط المالحظة",
+            "page": 10,
+            "content": "الخطوة 5 نقاط المالحظة\nتتغير الإجابة مع كل تشغيل حتى للسؤال نفسه .وقد يجيب بثقة عمّا لا يعرفه.\nإن اتسع الوقت، جرّب أسئلة أخرى خاصة بالدورة\nuv run python -m app.ask \"ما هو«وسم lecNN» المستخدم في دورة AIE2026؟\"\nuv run python -m app.ask \"ماذا نتعلم في المحاضرة 2 من AIE2026؟\"\nمصطلح عام\nيجيب بشكل صحيح في الغالب\nأمور خاصة بالدورة\n لا يعرفها، فيجيب«لا أعرف »أو إجابة عامة تبدو مقن\nعة\nعند التكرار\nتتغير الإجابة مع كل تشغيل .وقد يخطئ بثقة\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\n المحتوى الصحيح موجود في homework-levels\n داخل data/glossary.json\n .قارنه بإجابة النموذج.",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 10"
+          },
+          {
+            "id": "lec01-exercise-p011",
+            "title": "الخطوة 6 عرض عدد الرموز( tokens ) باستخدام Copilot",
+            "page": 11,
+            "content": "الخطوة 6 عرض عدد الرموز( tokens ) باستخدام Copilot\nالخطوة 6\n عرض عدد الرموز(\ntokens\n )\n باستخدام Copilot\n عدّل app/ask.py\n عند موضع TODO ليعرض عدد رموز الإدخال وعدد رموز الإخراج.\n1\n افتح app/ask.py\n وابحث عن موضع TODO\n2\nعدّله ليعرض عدد رموز الإدخال والإخراج .\n يمكنك استخدام إكمال Copilot أو محادثته\n3 اقرأ الكود المقترح وافهمه قبل اعتماده\nGitHub Copilot\nالميزات:الإكمال، المحادثة، الوكيل\nCopilot Free\n :\n حتى 2,000 إكمال للكود شهريا\nالطالب:\n يمكن للطالب الموثَّقين استخدام Copilot Student مجانا\nاقرأ الكود المقترح وافهمه قبل اعتماده.\nالمصدر :\ndocs.github.com  https://docs.github.com/en/copilot/get-started/plans\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\n حول AGENT.md / CLAUDE.md\n لوكالء البرمجة آلية لنقل المعرفة الضمنية(سنتناولها أيضًا في المحاضرة 3\n .)\n راجع\nالمواد الإضافية في آخر العرض.",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 11"
+          },
+          {
+            "id": "lec01-exercise-p012",
+            "title": "الخطوة 7 إنشاء فرع وتقديم PR",
+            "page": 12,
+            "content": "الخطوة 7 إنشاء فرع وتقديم PR\nالخطوة 7\n إنشاء فرع وتقديم PR\n قدّم PR\n من فرع العمل lec\n01\n إلى main\n في fork الخاص بك .وبالطريقة نفسها في المحاضرات التالية.\ngit switch -c lec01\n# اكتب lectures/01/answer.md\ngit add -A\ngit commit -m \"تمرين المحاضرة 1\"\ngit push -u origin lec01\nفرع العمل\nlec01\n↓ PR\nbase repository: fork الخاص بك\nmain\nلا توجّهه إلى هنا\nمستودع الدورة\nالمطلوب تقديمه:\nPR\n يتضمن lectures/01/answer.md\n .\n أنشئ PR\n من lec\n01\n →\nmain\n في fork\n الخاص بك على GitHub\n.\n تأكد أن base repository\n هو fork\n الخاص بك(\n لا تقدّم PR إلى مستودع الدورة.)\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 12"
+          },
+          {
+            "id": "lec01-exercise-p013",
+            "title": "الخطوة 8 إيقاف Codespaces",
+            "page": 13,
+            "content": "الخطوة 8 إيقاف Codespaces\nالخطوة 8\n إيقاف Codespaces\nيستمر استهالك الحصة المجانية ما دام قيد التشغيل .أوقفه دائماا بعد الانتهاء.\nأسفل يسار Codespaces\n→\nStop Current Codespace\n الحصة المجانية لـ Codespaces\n(حساب شخصي، شهريًا)\nالخطة\nالتخزين\nالحوسبة\nGitHub Free\n15 GB-month\n120 ساعة\nGitHub Pro\n20 GB-month\n180 ساعة\nالمُضاعِف:\n لكل نوع جهاز(\n2-core\n =\n2\n ،\n4-core\n =\n4\n .)\n كلما زادت الأنوية\n استُهلكت الحصة أسرع، فاختر 2-core\nعند نفادها:إن لم تسجّل وسيلة دفع، فال يمكن الاستخدام حتى إعادة الضبط ف ي الشهر\n التالي(دون أي رسوم)\nالمصدر :\ndocs.github.com  https://docs.github.com/en/billing/concepts/product-billing/github-codespaces\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 13"
+          },
+          {
+            "id": "lec01-exercise-p014",
+            "title": "الواجب :يكفي إنجاز واحد",
+            "page": 14,
+            "content": "الواجب :يكفي إنجاز واحد\nاختر مستوى واحدا من ثالثة :\n أساسي /\n تنفيذ /متقدم.\nالمستوى\nالمحتوى\nأساسي نفّذ السؤال نفسه 3\n مرات مع تغيير النموذج(\n متغير البيئة AIE_MODEL\n )\n أو تغيير temperature\n ، ولخّص اختلاف الإجابات في answer.md\nتنفيذ عدّل app/ask.py ليتيح متابعة الأسئلة مع الاحتفاظ بسجل المحادثة\nمتقدم\nقِس زمن الاستجابة وعدد الرموز، وقارن بين عدة نماذج وأسئلة .وناقش عالقتها بحدود المعدل في الحصة المجانية\nالنموذج و temperature\n:طريقة التبديل والتنبيهات في الشريحة التالية\nالتقديم:\n اكتب في lectures/01/answer.md\n وقدّمه عبر PR\n .القواعد في الشريحة التي تليها\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 14"
+          },
+          {
+            "id": "lec01-exercise-p015",
+            "title": "تقديم الواجب وقواعده",
+            "page": 15,
+            "content": "تقديم الواجب وقواعده\n اكتب في answer.md\n وقدّمه عبر PR بالطريقة نفسها للتمرين .يكفي إنجاز واحد.\n1\n اعمل في فرع العمل في fork الخاص بك .\n إن غيّرت الكود في مستوى التنفيذ أو المتقدم، فأودِع(\ncommit\n )الكود أيضا\n2\n اكتب في lectures/01/answer.md\n :المستوى المختار، وما فعلته، والنتائج، والنموذج المستخدم\n3\n نفّذ commit و push\n وقدّم PR\n .\n تأكد أن base repository\n هو fork الخاص بك\nالتقييم:يُرجى إنجاز واحد على الأقل\nأدوات الذكاء الاصطناعي:مسموح بها .\n اكتب ما تحققت منه\nبنفسك\n مفتاح API\n:\n لا تكتبه في answer.md\n أو الكود أو السجالت\nأو لقطات الشاشة\nاكتب كما هي حتى النتائج غير الناجحة أو التي لم يظهر فيها فرق\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 15"
+          },
+          {
+            "id": "lec01-exercise-p016",
+            "title": "تبديل النموذج وتنبيهات",
+            "page": 16,
+            "content": "تبديل النموذج وتنبيهات\nبدّل النموذج عبر متغير البيئة AIE_MODEL وسجّل النموذج الذي استخدمته.\nAIE_MODEL=gemini-3.8-flash uv run python -m app.ask \"ما هو LoRA؟\"\nAIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask \"ما هو LoRA؟\"\nحدود الحصة المجانية المقاسة في الدورة:\n• gemini-3.5-flash-lite: ‏15 طلبًا في الدقيقة و500 في اليوم. مناسب للتشغيل المتكرر والمقارنة.\n• gemini-3.8-flash (فئة أعلى): ‏5 طلبات في الدقيقة ونحو 10–20 في اليوم. قد يعيد الخطأ 503. مناسب لتجربة بضعة أسئلة بنموذج أقوى.\nتجنب gemini-3.5-flash دون lite. أُلغي دعمه في 2026-10-08، وتُحوَّل طلباته تلقائيًا إلى gemini-3.6-flash.\ntemperature: راجع معامل config في generate_content. جعلته Google متقادمًا في 2026-07-21؛ قد يتجاهله النموذج أو يظهر خطأ. سجّل النتيجة كما هي.\nتختلف الحدود حسب النموذج. تحقّق من الحصة في AI Studio ومن إمكانية استخدام API.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 16"
+          },
+          {
+            "id": "lec01-exercise-p017",
+            "title": "تمهيد المحاضرة 2 :أساسيات النماذج الأساسية",
+            "page": 17,
+            "content": "تمهيد المحاضرة 2 :أساسيات النماذج الأساسية\nتمهيد المحاضرة 2\n :أساسيات النماذج الأساسية\n في التمرين نستخدم LoRA\n على Colab لتعلّم صيغة الإجابة ونقارن النتائج.\nالمحاضرة\n•أساسيات النماذج الأساسية\n•إعدادات التوليد وتذبذب المخرجات\n•\n آلية LoRA و QLoRA\nالتمرين\n•\n تدريب LoRA\n على Colab\n•المقارنة قبل التدريب وبعده، بفصل الصيغة عن المحتوى\n«التذبذب »و«الإجابة عمّا لا يعرفه »\n اللذان الحظناهما اليوم يمهّدان لشرح الآلية في المحاضرة 2\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO\nما الحظناه اليوم ما تتناوله المحاضرة 2\nتتغير الإجابة مع كل تشغيل، حتى للسؤال نفسه\nإعدادات التوليد وتذبذب المخرجات\nيجيب إجابة مقنعة حتى دون معرفة الدورة\nما الذي يكتسبه النموذج بالتدريب وما الذي لا يكتسبه",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 17"
+          },
+          {
+            "id": "lec01-exercise-p018",
+            "title": "الخالصة :ما أنجزناه اليوم والمحاضرة القادمة",
+            "page": 18,
+            "content": "الخالصة :ما أنجزناه اليوم والمحاضرة القادمة\nشرحنا بيئة التطوير وطريقة التقديم المستخدمتين في المحاضرات التالية.\n1\n فتحنا fork\n الخاص بنا في Codespaces\n واستدعينا\nGemini API\n2\n عدّلنا الكود باستخدام Copilot ليعرض عدد الرموز\n3\n قدّمنا PR\n من lec\n01\n إلى main\n في fork الخاص بنا\nالواجب:\n يكفي إنجاز واحد من أساسي /\n تنفيذ /متقدم.\nالموعد النهائي :\n أسبوع واحد كقاعدة عامة(\n10/26\n)\n المحاضرة 2\n:أساسيات النماذج الأساسية .\n نستخدم LoRA\n على Colab\n أوقف Codespaces بعد الانتهاء من استخدامه\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 18"
+          },
+          {
+            "id": "lec01-exercise-p019",
+            "title": "مواد إضافية",
+            "page": 19,
+            "content": "مواد إضافية\nسياق قابل إلعادة الاستخدام\n(AGENTS.md / CLAUDE.md)\nاكتب ما لا يمكن استنتاجه وسلّمه للوكيل الذي يبدأ القراءة من الصفر كل مرة\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 19"
+          },
+          {
+            "id": "lec01-exercise-p020",
+            "title": "لماذا نحتاج ملفات السياق؟",
+            "page": 20,
+            "content": "لماذا نحتاج ملفات السياق؟\nيبدأ الوكيل القراءة من الصفر كل مرة .دوّن المعرفة الضمنية للمستودع وقدّم الافتراضات نفسها كل مرة.\nإن لم تكتبها\n•يخمّن أوامر التشغيل والاختبار\n•لا يعرف الأعراف المخالفة للمعتاد وال مواضع التعثر\n•تكرر الشرح نفسه في كل طلب\nإن كتبتها\n•تُقرأ من الملف في بداية العمل\n•\n تُودَع(\ncommit\n )في المستودع، فيمكن للفريق مشاركتها ومراجعتها\n•يقتصر الطلب على ما يخص تلك المهمة\nAGENTS.md\n“\na README for agents\n”\n .\n لا حقول إلزامية، وهو ملف Markdown عادي .\n صيغة مشتركة\nتقرؤها أدوات كثيرة\nCLAUDE.md\n يقرؤه Claude Code عند التشغيل .\n ليس إعدادا مُلزِ ماا بل ملف يُستخدم كـ context\n .\n لما يجب تنفيذه حتماا\n استخدم آلية منفصلة هي hook\nالمصدر :\nagents.md »AGENTS.md«\n ،\nClaude Code Docs »How Claude remembers your project\n»\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 20"
+          },
+          {
+            "id": "lec01-exercise-p021",
+            "title": "الملفات الرئيسية وطريقة قراءتها",
+            "page": 21,
+            "content": "الملفات الرئيسية وطريقة قراءتها\nAGENTS.md المشترك، وملفات خاصة بكل أداة .الأداة هي التي تحدد ما تقرؤه وكيف.\nالملف\nالأدوات الرئيسية\nطريقة القراءة\nAGENTS.md\nCodex و Cursor\nو GitHub Copilot وغيرها\nيمكن تداخلها، والأقرب له الأولوية .\n يدمج Codex\n الملفات من الجذر حتى مجلد العمل(\n حتى 32\nKiB\nافتراضيا)\nCLAUDE.md\nClaude Code يدمج ملفات المجلدات الأعلى عند التشغيل .ويقرأ ملفات المجلدات الفرعية عند لمس ملفاتها .إن لم يوجد\nCLAUDE.md\n يقرأ AGENTS.md\n.github/copilot-instructions.md\n.github/instructions/*.instructions.md\nGitHub Copilot\n المستودع كله /\n تحديد المسارات بـ applyTo\n .\n ويستخدم cloud agent\n أيضا AGENTS.md\nو CLAUDE.md و GEMINI.md في الجذر\n ملفات.\nmdc\n في.\ncursor/rules\nCursor\n تحديد شروط القراءة بـ description و globs و alwaysApply\n .\n يدعم AGENTS.md أيضا\nGEMINI.md\nGemini CLI يدمج بالترتيب :\n عام →\n مساحة العمل →المجلدات التي تم الوصول إليها .\n ويمكنه قراءة AGENTS.md\nعبر الإعدادات\nالمصدر :\nagents.md\n ،\nOpenAI »Custom instructions with AGENTS.md«\n ،\nClaude Code Docs »How Claude remembers your project«\n ،\nGitHub Docs »Adding repository\ncustom instructions«\n ،\nCursor Docs »Rules«\n ،\nGemini CLI Docs »GEMINI.md\n»\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 21"
+          },
+          {
+            "id": "lec01-exercise-p022",
+            "title": "الحد الأدنى :ما يُضمَّن وما لا يُضمَّن",
+            "page": 22,
+            "content": "الحد الأدنى :ما يُضمَّن وما لا يُضمَّن\nاسأل عن كل سطر :\n«هل سيخطئ الوكيل لو حذفته؟»\n .\n المعيار أقل من 200 سطر لكل ملف.\nما يُضمَّن\n•أوامر التشغيل والاختبار و lint التي لا يمكن تخمينها\n•أهم مالمح بنية المجلدات، والأعراف المخالفة للمعتاد\n•ما يجب عدم فعله\n•\n تعريف الإنجاز(أي الاختبارات يجب أن تنجح)\n•\n أعراف المستودع(\n أسماء الفروع، قواعد PR\n)\nما لا يُضمَّن\n•\n المعلومات السرية(\n مثل مفاتيح API\n)\n•ما يتضح بقراءة الكود، والأعراف العامة للغة\n•\n الشروح الطويلة، ووثائق API المفصلة\n•المعلومات كثيرة التغير\n•\n تعليمات بديهية مثل«\n اكتب clean code\n»\n أقل من 200 سطر\n كلما طال استهلك context أكثر وقلّ الالتزام بالتعليمات\n الاستيراد بـ@\npath\n التداخل حتى 4 مستويات .\n الاستيراد لا يقلل تكلفة context\nغير مُلزِ م\n ما يجب تنفيذه حتماا يُضبط عبر hook\nالمصدر :\nClaude Code Docs »How Claude remembers your project\n »و«\nBest practices for Claude Code\n»\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 22"
+          },
+          {
+            "id": "lec01-exercise-p023",
+            "title": "تعليمات تُقرأ دائمًا، و Skill يُقرأ حسب المهمة",
+            "page": 23,
+            "content": "تعليمات تُقرأ دائمًا، و Skill يُقرأ حسب المهمة\nأبقِ التعليمات الدائمة قصيرة .\n افصل خطوات كل مهمة في Skill، وال تُحمَّل إال عند الاستخدام.\nتُقرأ دائمًا\nCLAUDE.md / AGENTS.md\n تدخل context في كل مرة .لذا اجعلها قصيرة، ومقتصرة على ما يشترك فيه كل العمل\nيُقرأ حسب المهمة\nSkill: .claude/skills/<name>/SKILL.md\n لا يدخل دائماا إال description\n .\n ويُحمَّل المتن عند الاستخدام(\nprogressive disclosure\n .)\n المعيار لـ SKILL.md\n أقل من 500 سطر\nDiscovery\n التعرّف عبر description\nActivation\nقراءة المتن عند الاستخدام\nExecution\nالتنفيذ وفق الخطوات\nالتقسيم في مستودع نموذجي\nAGENTS.md / CLAUDE.md في الجذر\nتعليمات دائمة :أوامر لا يمكن تخمينها، وأعراف مخالفة للمعتاد، وخطوات الاخ\nتبار\n.claude/skills/<name>/SKILL.md\n خطوات كل مهمة(أمثلة الدليل الرسمي :\n أعراف API\n ، وخطوات إصالح Issue\n)\nمعيار التقسيم:هل يلزم لكل العمل أم لمهام بعينها فقط؟\nAgent Skills\n :\n نُشر كمعيار مفتوح في 2025\n-\n12\n .\n وتدعمه أيضا Codex و GitHub Copilot و Cursor و Gemini CLI وغيرها.\nالمصدر :\nClaude Code Docs »Skills\n »و«\nBest practices for Claude Code«\n ،\nAnthropic »Introducing Agent Skills\n »\n(\n2025\n-\n10\n-\n16\n ، تحديث 2025\n-\n12\n-\n18\n)\n ،\nagentskills.io »Agent\nSkills Overview\n»\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 23"
+          },
+          {
+            "id": "lec01-exercise-p024",
+            "title": "أدلة الفعالية :الكتابة لا تعني التحسن دائمًا",
+            "page": 24,
+            "content": "أدلة الفعالية :الكتابة لا تعني التحسن دائمًا\n الملفات التي ولّدها LLM خفّضت معدل النجاح، وما كتبه المطورون رفعه .لكن التكلفة تزداد.\n انخفاض بنحو 3\n%\ncontext file\n ولّده LLM\n :معدل نجاح المهام\n ارتفاع بنحو 4\n%\ncontext file كتبه المطورون :معدل نجاح المهام أكثر من 20\n%\nزيادة تكلفة الاستدالل\nGloaguen\n وآخرون(\nETH Zurich وغيرها .)\n قيّموا 3\n وكالء برمجة على AGENTbench\n(\n12\n ،مستودعا 138 حالة )و SWE-bench Lite\n .\n تتبع الوكالء التعليمات، لكن وصف نظرة عامة على المستودع لم يُفد، بينما\nأفاد في نقل الأعراف غير القياسية.\n دراسة أخرى(\nLulla وآخرون:)\n مع AGENTS.md\n قلّ وسيط زمن التنفيذ بنسبة 28.64\n %\n ورموز الإخراج بنسبة 16.58\n%\n ، مع إنجاز مماثل للمهام(\n10\n ،مستودعات 124\nPR\n.)\nلا تكتفِ بالتوليد التلقائي :قصير، يكتبه إنسان، وتُتحقق فعاليته\nالمصدر :\nGloaguen\n وآخرون«\nEvaluating AGENTS.md« arXiv:\n2602.11988\n(\n2026\n-\n02\n-\n12\n ،\nv\n3 2026\n-\n09\n-\n29\n)\n ،\nLulla\n وآخرون«\nOn the Impact of AGENTS.md Files on the\nEfficiency of AI Coding Agents« arXiv:\n2601.20404\n(\n2026\n-\n01\n-\n28\n .)\n كالهما نسخة أولية(\npreprint\n)\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 24"
+          },
+          {
+            "id": "lec01-exercise-p025",
+            "title": "لا تتوقف عند الكتابة",
+            "page": 25,
+            "content": "لا تتوقف عند الكتابة\nملفات السياق مثل الكود :\n أودِعها(\ncommit\n)، وراجعها، وطوّرها.\n1 أضف عند الفشل\n إذا كرر الوكيل الخطأ نفسه، أضف سطرا ا\nيمنعه\n2 راجِ ع\n تُودَع في git ويقرؤها البشر كفروق في\nPR\n3 تحقق من الفعالية\nقارن نتائج الطلب نفسه قبل الإضاف\nة وبعدها\n4 احذف ما تقادم\nصحّحها عند تغيّر الأوامر أو البنية .واح ذف\n وفق معيار«هل سيخطئ لو حذفته؟»\nكرر ذلك مع كل عمل\nالدليل الرسمي:\n أودِع CLAUDE.md\n في git، وراجعه واحذف منه كما تفعل مع الكود.طريقة تقييم الفعالية:\n بعد التعديل، الحظ هل تغيّر سلوك الوكيل فعالا.\nالمصدر :\nClaude Code Docs »Best practices for Claude Code\n»\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 1: التمارين والواجبات · ملف PDF المترجم، ص. 25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lec02-exercise",
+    "title": "المحاضرة 2: التمارين والواجبات — تعلّم تنسيق الإجابات باستخدام LoRA وقارن النتائج قبل التدريب وبعده",
+    "content": [
+      {
+        "section": "جميع الشرائح",
+        "content": [
+          {
+            "id": "lec02-exercise-p001",
+            "title": "تعلّم تنسيق الإجابات باستخدام LoRA وقارن النتائج قبل التدريب وبعده",
+            "page": 1,
+            "content": "تعلّم تنسيق الإجابات باستخدام LoRA وقارن النتائج قبل التدريب وبعده\nالدورة العملية في هندسة الذكاء الاصطناعي 2026\nالمحاضرة  | 2 التمارين والواجبات\nأساسيات النماذج الأساسية\n2026/10/26 التمرين Yoshiaki Sato :\nدرّ ب نموذجً ا صغيرً ا بـ  LoRA لفترة قصيرة ،وتحقّق بالأرقام والمخرجات مما يتغير وما لا يتغير\nيُحظر التصوير أو الإفصاح لأطراف ثالثة دون\nإذن.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 1"
+          },
+          {
+            "id": "lec02-exercise-p002",
+            "title": "مراجعة واجب المحاضرة الأولى",
+            "page": 2,
+            "content": "مراجعة واجب المحاضرة الأولى\nالمحاضرة  :1 شرح الواجب\nنرتّب ما لاحظناه عند سؤال  LLM الخام ،ونربطه بتمرين اليوم )أول  5 إلى  10 دقائق(.\nأساسي  تنفيذ  متقدم\nنفّذ السؤال نفسه  3 مرات مع تغيير النموذج أو  عدّل  app/ask.py ليتيح أسئلة متتالية مع الاحتفاظ بسجل  قِس زمن الاستجابة وعدد الرموز ) ،(tokens وقارن بين عدة نماذج\nوأسئلة .وفكّر في علاقتها بحدود المعدّل في الحصة المجانية\n،temperature ولخّ ص اختلاف الإجابات  المحادثة\nالمهم هو »ماذا حدث« و»لماذا« .ليست مهمة لتخمين أرقام صحيحة\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 2"
+          },
+          {
+            "id": "lec02-exercise-p003",
+            "title": "شرح المستوى الأساسي: قد يعطي السؤال نفسه إجابات مختلفة",
+            "page": 3,
+            "content": "شرح المستوى الأساسي: قد يعطي السؤال نفسه إجابات مختلفة\nالتوليد احتمالي، لذا قد تختلف الإجابة حتى مع بقاء الشروط نفسها. يرتبط ذلك بأخذ العينات (sampling) في المحاضرة الثانية.\nما نلاحظه:\n• عند طرح السؤال نفسه ثلاث مرات بالشروط نفسها قد تختلف كل إجابة.\n• تغيير النموذج عبر AIE_MODEL يغيّر الصياغة والطول وكيفية الإجابة عن الأمور التي لا يعرفها النموذج.\nقارن الصياغة والطول وصحة الحقائق ودرجة الثقة وكيفية الرد على الأسئلة الخاصة بالدورة.\ntemperature: أعلنت Google أنه متقادم في 2026-07-21. تتجاهله نماذج Gemini 3.6 وما بعدها. إذا لم يغيّر النتيجة أو أعطى خطأً فسجّل ما حدث.\ngemini-3.5-flash (دون lite): بعد تغيير مواصفات Gemini API في أكتوبر، صار النموذج متقادمًا، وتُحوَّل طلباته إلى gemini-3.6-flash. لأن مواصفات واجهات النماذج اللغوية تتغير باستمرار، تابع التحديثات وتحقّق من النموذج الفعلي عند دمج الواجهة في أحد التطبيقات.\nفي الواجب يمكن مقارنة أي مجموعة مناسبة، مثل gemini-3.5-flash-lite وgemini-3.8-flash.\nالمرجع: https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=ar\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 3"
+          },
+          {
+            "id": "lec02-exercise-p004",
+            "title": "شرح التنفيذ: ماذا يعني الاحتفاظ بسجل المحادثة؟",
+            "page": 4,
+            "content": "شرح التنفيذ: ماذا يعني الاحتفاظ بسجل المحادثة؟\nشرح التنفيذ :ما معنى الاحتفاظ بسجل المحادثة\nالنموذج لا يتذكر التبادلات السابقة .في كل مرة نُرسل التبادلات السابقة ضمن المدخلات.\nالطريقة  :1 استخدام  Chat في SDK  الطريقة  :2 الاحتفاظ بالسجل بنفسك\nأنشئ  Chat بـ  ،client.chats.create ثم أرسل باستمرار بـ send_message  اجمع رسائل المستخدم والنموذج في قائمة\nكاملا في كل مرة\nً  يحتفظ  Chat بالسجل ويُرسله  مرّ ر تلك القائمة في كل مرة إلى  contents في generate_content\nمثال الحل :نعدّل  app/ask.py بالطريقة  .1 في الشرائح الثلاث التالية :قبل التعديل ،وبعده ،وما يُرسَ ل فعليًا.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 4"
+          },
+          {
+            "id": "lec02-exercise-p005",
+            "title": "شرح التنفيذ: ملف app/ask.py قبل التعديل",
+            "page": 5,
+            "content": "شرح التنفيذ: ملف app/ask.py قبل التعديل\nتتلقى ask() سؤالًا واحدًا، وتستدعي generate_content مرة واحدة، ثم تعيد الإجابة.\nقبل التعديل (مقتطف):\n```python\ndef ask(question: str) -> str:\n    client = genai.Client(api_key=get_api_key())\n    response = client.models.generate_content(model=MODEL, contents=question)\n    # TODO (تمرين المحاضرة الأولى): from response.usage_metadata,\n    #   والإخراج الإدخال رموز عدد اعرض (b ب الاستعانة يمكنك Copilot)\n    return response.text\n```\nتقرأ main السؤال بواسطة argparse وتستخدم DEFAULT_QUESTION عند عدم تحديده. تطبع ناتج ask()، وعند errors.APIError تعرض api_error_message وتنهي التنفيذ.\nكل استدعاء ينفّذ generate_content مرة واحدة من جديد، ولا تتضمن المدخلات الأسئلة والأجوبة السابقة، لذا لا يتذكرها النموذج في سؤال المتابعة.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 5"
+          },
+          {
+            "id": "lec02-exercise-p006",
+            "title": "شرح التنفيذ: الدالة chat() بعد التعديل (مثال الحل)",
+            "page": 6,
+            "content": "شرح التنفيذ: الدالة chat() بعد التعديل (مثال الحل)\nأضف chat() لتستطيع متابعة الأسئلة مع احتفاظ Chat بالسجل.\nبعد التعديل (الدالة المضافة في مثال الحل):\n```python\ndef chat(first_question: str) -> None:\n    client = genai.Client(api_key=get_api_key())\n    session = client.chats.create(model=MODEL)  # the SDK's Chat holds the history\n    question = first_question\n    while question:\n        response = session.send_message(question)  # sends history so far + this question\n        print(response.text)\n        usage = response.usage_metadata\n        print(f\"[tokens] input {usage.prompt_token_count} / output {usage.candidates_token_count}\")\n        question = input(\"\\n[Next question (blank line to quit)] \").strip()\n```\n1. أنشئ كائن Chat باستخدام client.chats.create للاحتفاظ بالسجل.\n2. استدعِ send_message داخل حلقة، وأنهِها بإدخال سطر فارغ.\n3. أضف الخيار --chat وأبقِ ask() للمحافظة على طريقة الاستخدام والاختبارات الحالية.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 6"
+          },
+          {
+            "id": "lec02-exercise-p007",
+            "title": "شرح التنفيذ: ما الذي يُرسل في كل مرة؟",
+            "page": 7,
+            "content": "شرح التنفيذ: ما الذي يُرسل في كل مرة؟\nشرح التنفيذ :ما الذي يُرسَ ل في كل مرة\nالمُرسَ ل = السجل السابق  +السؤال الحالي .ويزداد مع كل دور.\n#سطر فارغ للإنهاء LoRA ما هو\" uv run python -m app.ask --chat  𞤄\"\nالمرة 1  Q1\nالمرة 2  Q1  A1  Q2\nالمرة 3  Q1  A1  Q2  A2  Q3  ← يزداد  prompt_token_count في كل مرة\nالكحلي :السؤال الحالي الرمادي :الأسئلة السابقة الأزرق الفاتح :الإجابات السابقة\nزيادة رموز الإدخال تؤثر في التكلفة والحد الأقصى ،فيلزم حذف السجل القديم أو تلخيصه\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 7"
+          },
+          {
+            "id": "lec02-exercise-p008",
+            "title": "شرح المستوى المتقدم: زمن الاستجابة وعدد الرموز وحدود المعدل",
+            "page": 8,
+            "content": "شرح المستوى المتقدم: زمن الاستجابة وعدد الرموز وحدود المعدل\nشرح المستوى المتقدم :زمن الاستجابة وعدد الرموز وحدود المعّدل\nلا تحكم من قياس واحد ،بل قِس عدة مرات وقارن .عدد الرموز موجود في الاستجابة.\nزمن الاستجابة  عدد الرموز )(usage_metadata  حدود المعدّل\n• قِس قبل الاستدعاء وبعده بـ ()time.perf_counter  • الإدخال prompt_token_count  • حدود لكل نموذج ولكل مشروع ،مثل عدد الطلبات في الدقيقة وفي\n• قد تكون المرة الأولى أبطأ ،فقِس عدة مرات  • الإخراج candidates_token_count  اليوم\n• قارن بالوسيط  • التفكير thoughts_token_count  • تجاوزها يُعطي الخطأ ) 429 مثال 429 :\n• الإجمالي total_token_count  .(RESOURCE_EXHAUSTED انتظر ثم أعد المحاولة\nرموز التفكير تُحسب منفصلة ،فقد لا يساوي الإدخال  +الإخراج الإجمالي  • تحقّق من الحدود الحالية في AI Studio\nقياسات الدورة )للاسترشاد( gemini-3.5-flash-lite: 15 :في الدقيقة و 500 في اليوم ،و gemini-3.8-flash: 5 في الدقيقة ونحو  10 إلى  20 في اليوم .الحدود قابلة للتغيير.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 8"
+          },
+          {
+            "id": "lec02-exercise-p009",
+            "title": "المشكلات الشائعة والتنبيهات",
+            "page": 9,
+            "content": "المشكلات الشائعة والتنبيهات\nنقاط تعثّر شائعة وتنبيهات\nنراجع مرة أخرى نقاط التعثّر الشائعة في خطوات المحاضرة  1 وواجبها.\nمفتاح API  1  لا تكتبه في الكود أو  answer.md أو السجلات أو لقطات الشاشة .إن تسرّ ب فاحذفه في  AI Studio وأنشئ غيره\nاتجاه PR  2  تأكّد أن  base repository ليس مستودع الدورة .وجّ هه إلى  main في  fork الخاص بك\nCodespaces  3  أوقفه بعد الانتهاء .تركه يعمل يستهلك الحصة المجانية باستمرار\nحدود المعّدل  4  عند بلوغ الحد ،انتظر أو قلّل عدد المرات .واذكر ذلك في answer.md\nوكذلك في  Colab اليوم :احذف وقت التشغيل بعد الانتهاء\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 9"
+          },
+          {
+            "id": "lec02-exercise-p010",
+            "title": "التمهيد لتمرين اليوم",
+            "page": 10,
+            "content": "التمهيد لتمرين اليوم\nالصلة بتمرين اليوم\nفي المحاضرة » 1 سألنا« النموذج .اليوم »ندرّ ب« نموذجً ا صغيرً ا بأنفسنا.\nالمحاضرة 1  اليوم )المحاضرة (2\nسألنا نموذجً ا خلف API  →  تدريب نموذج صغير بـ LoRA\nأجاب أحيانًا بثقة حتى عمّا لا يعرفه  التدريب يغيّر الشكل ،لكن الحكم فيما لا يعرفه غير مضمون\nما رأيناه في المحاضرة  1 من »الإجابة عمّا لا يعرفه« نتحقق منه اليوم قبل التدريب وبعده\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 10"
+          },
+          {
+            "id": "lec02-exercise-p011",
+            "title": "أهداف هذه الجلسة",
+            "page": 11,
+            "content": "أهداف هذه الجلسة\nأن تشرح بنتائجك ما يغيّره التدريب وما لا يغيّره.\n1  2  3\nتدريب نموذج صغير بـ  LoRA لفترة قصيرة ،والتحقق  أن تشرح بنتائجك أن »الشكل يُكتسب بالتدريب ،لكن  أن تشرح بكلماتك متى يناسب الضبط الدقيق\nبالأرقام والمخرجات مما يتغير وما لا يتغير قبل التدريب  الحكم فيما لا يعرفه )طلب التأكد أم الجزم( غير  ) (fine-tuning ومتى لا يناسب\nوبعده  مضمون«\nالأداة في التمرين ،T4 GPU) Google Colab :الحصة المجانية(\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 11"
+          },
+          {
+            "id": "lec02-exercise-p012",
+            "title": "ما الذي نتحقق منه؟",
+            "page": 12,
+            "content": "ما الذي نتحقق منه؟\nما الذي نتحقق منه\nالتدريب يضبط الشكل ،لكن ليس بالضرورة الحكم .نتحقق من ذلك بالترتيب.\nحتى مع تحديد الشكل في الموجّ ه ) ،(prompt قد لا يلتزم به النموذج الصغير  1  القسم  ،3 قبل التدريب\nبعد بضع دقائق من التدريب بـ  ،LoRA يلتزم بالشكل في الغالب  2  القسم  ،5 بعد التدريب\n3  حتى مع انضباط الشكل ،الحكم عند السؤال عمّا ليس في ) FAQ طلب التأكد أم الجزم( غير مضمون  القسمان  5 و 6\nمتقدم :تحميل النموذج نفسه بتكميم  4bit يغيّر المخرجات حتى دون تدريب  4  القسم ) 8 اختياري(\nالقسم :رقم العنوان في الدفتر  .notebooks/lora_format_tuning.ipynb نفّذ الخلايا بالترتيب من الأعلى.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 12"
+          },
+          {
+            "id": "lec02-exercise-p013",
+            "title": "المادة: أسئلة شائعة لدورة وهمية والمخرجات المطلوبة",
+            "page": 13,
+            "content": "المادة: أسئلة شائعة لدورة وهمية والمخرجات المطلوبة\nأعطِ النموذج أسئلة شائعة وسؤالًا، واطلب إجابة في سطر JSON واحد. جميع بيانات الأسئلة الشائعة وهمية:\n• موعد التسليم: 30 سبتمبر، الساعة 23:59.\n• مكان التسليم: قسم «الواجبات» في بوابة التعلّم.\n• صيغة التسليم: ملف PDF واحد باسم StudentID_AssignmentNo.pdf.\n• الساعات المكتبية: كل ثلاثاء من 17:00 إلى 18:00.\n• التسليم المتأخر: يُقبل خلال 48 ساعة مع خصم درجات.\nبنية الإجابة المتوقعة: {\"answer\": <string>, \"needs_review\": <boolean>}.\nعندما تكون المعلومة في الأسئلة الشائعة، أجب استنادًا إلى نصها مع needs_review: false.\nعندما لا تكون المعلومة فيها، وضّح أنها غير مذكورة وأنها تحتاج إلى تحقق من إدارة الدورة، مع needs_review: true.\nينشئ الدفتر البيانات الوهمية، وهي لا تشمل مواعيد أو روابط حقيقية.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 13"
+          },
+          {
+            "id": "lec02-exercise-p014",
+            "title": "تقسيم البيانات: جمل التدريب لا تظهر في التقييم",
+            "page": 14,
+            "content": "تقسيم البيانات: جمل التدريب لا تظهر في التقييم\nتقسيم البيانات :لا تُعرض جمل التدريب في التقييم\nتُوزَّع إعادة الصياغة على  train/valid/test حسب القالب.\ntrain  valid  test\n14 عنصرً ا  7 عناصر  سؤالا\nً  21\n10 مع سند ،و 4 بلا سند .للتدريب  قوالب مختلفة عن  train و test  15 مع سند ،و 6 بلا سند .للتقييم قبل التدريب وبعده\nالإجابات الصحيحة في  :gold لا تُمرَّر قيم  needs_review والعبارات المطلوبة إلى النموذج  كمية التدريب :دون تكرار البيانات ،تُحدَّد بعدد الحقبات )(epochs\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 14"
+          },
+          {
+            "id": "lec02-exercise-p015",
+            "title": "جانبا التقييم: التنسيق والمحتوى",
+            "page": 15,
+            "content": "جانبا التقييم: التنسيق والمحتوى\nتقييم بمحورين :فصل الشكل عن المحتوى\nنقيس بمؤشرين منفصلين :هل التزم بشكل  ،JSON وهل الإجابة صحيحة.\nمعدل الالتزام بالشكل )(format_rate  معدل صحة المحتوى )(content_rate\n• يُقرأ كـ JSON  •  needs_review تطابق الإجابة الصحيحة\n• المفاتيح  answer و needs_review فقط  •  answer تتضمن العبارة الصحيحة\n• الأنواع :نص وقيمة منطقية\nإذا نقص مفتاح ،فالمحتوى × حتى لو كان النص صحيحً ا\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 15"
+          },
+          {
+            "id": "lec02-exercise-p016",
+            "title": "التحضير المسبق (اختياري، 5 دقائق) والأدوات",
+            "page": 16,
+            "content": "التحضير المسبق (اختياري، 5 دقائق) والأدوات\nالتحضير المسبق )اختياري 5 ،دقائق( والأدوات\nتنفيذ الأقسام  0 إلى  3 مرة قبل المحاضرة يقلّل التعثّر يومها.\nما تتحقق منه في التحضير )اختياري(  الأدوات\n• تخصيص GPU  •  ،T4 GPU) Google Colab الحصة المجانية(\n• تثبيت المكتبات  • النموذج )Qwen/Qwen3.5-0.8B (Apache-2.0\n• تنزيل النموذج  • الدفتر notebooks/lora_format_tuning.ipynb\nفي  Colab تُفقد المتغيرات عند انقطاع الجلسة .يوم المحاضرة نفّذ من  0 من جديد\nافتح في Colab\nhttps://colab.research.google.com/github/matsuolab/lecture-ai-engineering-2026-ar/blob/main/notebooks/lora_format_tuning.ipynb\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 16"
+          },
+          {
+            "id": "lec02-exercise-p017",
+            "title": "مسار التمرين (45 دقيقة)، بدءًا بمراجعة واجب المحاضرة الأولى",
+            "page": 17,
+            "content": "مسار التمرين (45 دقيقة)، بدءًا بمراجعة واجب المحاضرة الأولى\nتُخصّص الدقائق 5–10 الأولى لمراجعة واجب المحاضرة الأولى، تليها الخطوات 1 إلى 7:\n1. افتح الدفتر في Colab وأنشئ نسختك.\n2. اختر T4 GPU لنوع بيئة التشغيل.\n3. شغّل الدفتر من البداية واقرأ جدول ما قبل التدريب (الأقسام 0–3، نحو 5 دقائق).\n4. درّب باستخدام LoRA، وفي أثناء الانتظار اقرأ عن LoRA وQLoRA (القسم 4، نحو 4–5 دقائق).\n5. قيّم مرة أخرى وقارن النتائج، ثم جرّب أسئلة المعرفة (القسمان 5 و6).\n6. أنشئ result.json واكتب answer.md وافتح PR (القسم 7).\n7. اقطع الاتصال واحذف بيئة التشغيل.\nالزمن على T4: نحو 5 دقائق للأقسام 0–3 ونحو 10 دقائق للأقسام 4–7، منها 4–5 دقائق للتدريب.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 17"
+          },
+          {
+            "id": "lec02-exercise-p018",
+            "title": "الخطوتان 1 و2: أنشئ نسختك واختر T4 GPU",
+            "page": 18,
+            "content": "الخطوتان 1 و2: أنشئ نسختك واختر T4 GPU\nالخطوتان  1 و 2 انسخه لنفسك واختر T4 GPU\nانسخه إلى  Drive الخاص بك ثم نفّذه .اختر  T4 كـ .GPU\nافتح الدفتر في Colab  1  File  →  Save a copy in Drive\nفي الدفتر المنسوخ  2  Runtime  →  Change runtime type  →  T4 GPU\nعند ظهور »لا يوجد «GPU\nقليلا .إن تعذّر التخصيص فاتبع شريحة »عند تعذّر التدريب«\n← Runtime ← Change runtime type أعد اختيار  .T4 GPU عند الازدحام انتظر ً\nنفّذ الخلايا بالترتيب من الأعلى .التخطي يُسبّب خطأ »المتغير غير موجود«\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 18"
+          },
+          {
+            "id": "lec02-exercise-p019",
+            "title": "الخطوة 3: التقييم قبل التدريب في الأقسام 0 إلى 3 (نحو 5 دقائق)",
+            "page": 19,
+            "content": "الخطوة 3: التقييم قبل التدريب في الأقسام 0 إلى 3 (نحو 5 دقائق)\nالخطوة  3 الأقسام  0 إلى  :3 التقييم قبل التدريب )نحو  5 دقائق(\nفي جدول ما قبل التدريب ،اقرأ أي المفاتيح ناقصة وهل النص يطابق .FAQ\nما نراقبه  رسائل لا بأس بظهورها\n• القسم  :0 يظهر  GPU باسم Tesla T4  رسالة  pip الحمراء ):ERROR: pip's dependency resolver ... (cudf، pyarrow\n• القسم  :3 التحميل دون تكميم ) .(32bit مثال ذاكرة الأوزان 3.01GB  يمكن تجاهلها\n:You are sending unauthenticated requests to the HF Hub النماذج\n• الملخص ) format_rate و content_rate وغيرهما( وجدول الأسئلة الـ 21\nالعامة لا تحتاج تسجيل دخول\n• قبل التدريب ،يُتوقع غياب  needs_review في كثير من المخرجات\nلا يوجد تنفيذ سريع للانتباه ... is falling back to its reference PyTorch implementation ...:\nالخطي ،فهو أبطأ لكنه يعمل بتنفيذ صحيح\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 19"
+          },
+          {
+            "id": "lec02-exercise-p020",
+            "title": "الخطوة 4: التدريب باستخدام LoRA في القسم 4 (4–5 دقائق)",
+            "page": 20,
+            "content": "الخطوة 4: التدريب باستخدام LoRA في القسم 4 (4–5 دقائق)\nعشرون حقبة تعني المرور على 14 عنصر تدريب 20 مرة، بخطوتين في كل مرة، أي 40 خطوة.\n• trainable params وtrainable%: يُدرَّب جزء صغير فقط من جميع المعاملات.\n• Training Loss (كل 10 خطوات): ينخفض من نحو 1.5 إلى 0.01–0.02 خلال 40 خطوة.\n• الزمن على T4: من 240 إلى 290 ثانية، مع 40 خطوة و20.0 حقبة.\nأهم إعدادات CONFIG: lr 2e-4، lora_r 16، lora_alpha 32، seed 42، warmup_steps 6.\nالتوليد: do_sample: False، أي التوليد الجشع لتوحيد الشروط قبل التدريب وبعده.\nالدفعة 4 × تراكم التدرج 2 = 8 عناصر في الخطوة. يُستخدم تخميد cosine مع warmup.\nفي أثناء الانتظار اقرأ الشريحة التالية عن LoRA وQLoRA.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 20"
+          },
+          {
+            "id": "lec02-exercise-p021",
+            "title": "الفرق بين LoRA وQLoRA",
+            "page": 21,
+            "content": "الفرق بين LoRA وQLoRA\nالفرق بين  LoRA و QLoRA\nكلاهما يثبّت أوزان النموذج الأساسي ويدرّ ب فقط مصفوفات صغيرة مضافة ).(adapter\nالجانب  ) LoRA هذه المرة(  ) QLoRA النموذج الأساسي بـ (4bit\nذاكرة الأوزان  كبيرة  صغيرة )نحو  1/4 من  .16bit لـ  7 مليارات معامل :نحو  14GB بـ  ،16bit ونحو  3.5GB بـ (4bit\nمخرجات النموذج الأساسي  كما هي  قد تتغير بسبب خطأ التكميم\nسرعة التدريب  المرجع  لا يصبح أسرع ،وغالبًا أبطأ\nالمكتبات المطلوبة  peft  ) peft + bitsandbytes يتطلب (CUDA\nحتى في  QLoRA لا يُكمَّم  .adapter قارن قبل وبعد بشروط التكميم نفسها ،وسجّ ل  adapter مع معرّ ف النموذج الأساسي و revision وإعدادات التكميم.\nإن اتسع  GPU للنموذج فـ  ،LoRA وإلا فـ  QLoRA أو نموذج أصغر\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 21"
+          },
+          {
+            "id": "lec02-exercise-p022",
+            "title": "الخطوة 5: التقييم بعد التدريب في القسم 5 ومقارنة النتائج",
+            "page": 22,
+            "content": "الخطوة 5: التقييم بعد التدريب في القسم 5 ومقارنة النتائج\nالخطوة  5 القسم  :5 التقييم بعد التدريب والمقارنة بما قبله\nالأسئلة الـ 21 نفسها وإعدادات التوليد نفسها .الفرق الوحيد وجود .adapter\nجدول المقارنة  التراجع  أنماط الفشل المتبقية\nكيف تغيّر  format_rate و content_rate قبل التدريب  أسئلة نجحت قبل التدريب وفشلت بعده .المتوقع ألا يوجد شيء  • جزم في سؤال بلا سند باستخدام بند آخر من FAQ\nوبعده  • تهرّ ب بـ»غير مذكور« في سؤال له سند\nالإجابات بعد التدريب :تُعيد جمل بيانات الإشراف )نص  FAQ الأصلي( تقريبًا كما هي .يتوحّ د الشكل والنص ،لكن ليس بالضرورة أنه تعلّم الحكم »هل يوجد سند في .«FAQ\nخللا .قارن بأنماط الفشل\nحتى مع تثبيت  ،seed لا يتكرر التدريب على  GPU تمامًا .اختلاف الأسئلة المتبقية عن زميلك ليس ً\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 22"
+          },
+          {
+            "id": "lec02-exercise-p023",
+            "title": "الخطوة 5: أسئلة المعرفة في القسم 6",
+            "page": 23,
+            "content": "الخطوة 5: أسئلة المعرفة في القسم 6\nالخطوة  5 القسم  :6 أسئلة المعرفة\nعند السؤال عمّا ليس في  FAQ ولا في بيانات التدريب :هل طلب التأكد أم جزم؟\nالأسئلة  التصنيف  المعنى\nformat_error  لم يلتزم بالشكل )شائع قبل التدريب(\n3 حقائق غير موجودة في ) FAQ الرد المطلوب» :يلزم التأكد«(\n• موعد تسليم المشروع النهائي  needs_review  أجاب بأنه يلزم التأكد )مطلوب(\n• اسم المحاضر المسؤول  asserted  جزم مع  .needs_review false في سؤال ليس في  FAQ هو جزم بلا سند\n• موضوع المحاضرة القادمة\nسؤال ضابط واحد :موعد تسليم الواجب\nالنتائج الشائعة :قبل التدريب يكثر خرق الشكل ،وبعده قد يظهر »يلزم التأكد« والجزم كلاهما.\nلا تستنتج مسبقًا أن » Fine-Tuning لا يُصلح المعرفة أبدًا« ،بل أبلغ عن النتائج على بيانات هذه المرة\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 23"
+          },
+          {
+            "id": "lec02-exercise-p024",
+            "title": "الخطوتان 6 و7: أنشئ result.json وقدّمه واحذف بيئة التشغيل",
+            "page": 24,
+            "content": "الخطوتان 6 و7: أنشئ result.json وقدّمه واحذف بيئة التشغيل\nالخطوتان  6 و 7 إنشاء  result.json وتقديمه ،وحذف وقت التشغيل\nأنشئ  result.json في القسم  ،7 واكتب الخلاصة في  lectures/02/answer.md وقدّم .PR\nما تكتبه في قسم »التمرين« في answer.md  result.json و eval_before.json و eval_after.json في  .content/qlora_lab/انقر بالزر\n1\nالأيمن في قائمة الملفات يسارً ا ← تنزيل\n• النموذج والإعدادات المستخدمة )من  config في (result.json\n• هل نفّذت التدريب بنفسك )(executed_training_myself  اكتب الخلاصة في  .lectures/02/answer.md يمكن التحرير مباشرة على GitHub\n2\n•  format_rate و content_rate قبل التدريب وبعده\n• الأسئلة التي تراجعت\n• حالات الفشل المتبقية بعد التدريب وأنماطها  PR من فرع العمل  lec02 إلى  main في  fork الخاص بك .يمكن وضع  result.json في\n3\n• نتائج أسئلة المعرفة )التصنيف قبل التدريب ← بعده(  /lectures/02 وتضمينه\n• ما تغيّر بالتدريب وما لم يتغير\nالخطوة  .Runtime ← Disconnect and delete runtime :7 وقت  GPU المجاني في  Colab محدود\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 24"
+          },
+          {
+            "id": "lec02-exercise-p025",
+            "title": "إذا تعذر التدريب (القسم 4b من الدفتر)",
+            "page": 25,
+            "content": "إذا تعذر التدريب (القسم 4b من الدفتر)\nعند تعذّ ر التدريب ) 4b في الدفتر(\nإن توقف أثناءه فاستأنف .وإن تعذّر التدريب ،فاستخدم نتائج المحاضر للمقارنة والتحليل.\nتوقف أثناء التدريب  لا يُخصَّص  GPU أو لا ينتهي في الوقت\nاستأنف من نقطة الحفظ )كل  10 خطوات(/ckpt ،  استخدم  result.json و eval_before.json و eval_after.json التي نفّذها المحاضر على\nT4 للمقارنة والتحليل\n)trainer.train(resume_from_checkpoint=True\nالمكان /lectures/02/reference :في مستودع الدورة .افتحها على  GitHub أو استخدم\n»«Download raw file\nعند التقديم اجعل  executed_training_myself بقيمة  ،False واذكر في  answer.md ما نفّذته بنفسك\nبجعل  USE_DRIVE في  CONFIG بقيمة  ،True يُحفظ  adapter والنتائج في  Google Drive أيضًا وتبقى بعد انقطاع الجلسة\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 25"
+          },
+          {
+            "id": "lec02-exercise-p026",
+            "title": "اختياري: التحميل بتكميم 4 بت (القسم 8، نحو دقيقتين)",
+            "page": 26,
+            "content": "اختياري: التحميل بتكميم 4 بت (القسم 8، نحو دقيقتين)\nمتقدم :التحميل بتكميم ) 4bit القسم  ،8 اختياري ،نحو دقيقتين(\nنحمّل النموذج نفسه بـ ) 4bit (NF4 دون تدريب ،ونراقب تغيّر الذاكرة والمخرجات.\nذاكرة الأوزان\nتغيّر المخرجات ليس في اتجاه ثابت\n32bit  4bit  • بعض الأسئلة تتحسن\n→\nنحو 3GB  أقل من 1GB  • تصبح  needs_review بقيمة \") \"false نص( فتفشل في فحص النوع\n• يجزم بـ»نعم« أو »لا يوجد« في أسئلة بلا سند\nالقراءة :الفرق عن  32bit قبل التدريب هو أثر التكميم bitsandbytes .يتطلب  CUDA ويستغرق تثبيته نحو دقيقة ،ودقة الحساب ) float16 لا يدعم  T4 الصيغة .(bf16\nلتجربة  :QLoRA مرّ ر عبر  prepare_model_for_kbit_training ثم درّ ب بخطوات القسم  4 نفسها .قيّم قبل التدريب وبعده على النموذج الأساسي بـ  4bit كي لا تخلط أثر التكميم بأثر التدريب.\nتم التحقق من عمل ) QLoRA التدريب بـ  (4bit على  T4 أيضًا .يمكن تجربته في الواجب\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 26"
+          },
+          {
+            "id": "lec02-exercise-p027",
+            "title": "الواجب: يكفي إكمال مستوى واحد",
+            "page": 27,
+            "content": "الواجب: يكفي إكمال مستوى واحد\nالواجب :يكفي إنجاز مستوى واحد\nاختر مستوى واحدًا من الثلاثة :أساسي  /تنفيذ  /متقدم.\nالمستوى  المحتوى\nأساسي  غيّر واحدًا من  lora_r أو  lr أو  num_train_epochs في  CONFIG وأعد التدريب ،وسجّ ل  format_rate و content_rate و loss النهائي ومدة التدريب مقابل الإعداد الأصلي .بعد\nالتغيير نفّذ  Runtime ← Restart session ثم شغّل من الأعلى )لأن النموذج المدرَّب يبقى( .قارن ملفَي result.json\nتنفيذ  استبدل  FAQ و GROUNDED و UNGROUNDED بمادة خاصة بك )نحو  5 بنود( ،ودرّ ب وقارن قبل التدريب وبعده .استخدم تصميم شكل  JSON و needs_review كما هو.\nواذكر كيف أعددت أسئلة »بلا سند«\nمتقدم  أنشئ بـ  scripts/make_sft_dataset.py بيانات سؤال وجواب ) JSONL بصيغة  (messages من مسرد مصطلحات الدورة ،ودرّ ب عليها بدل  .FAQ أعّد بنفسك أسئلة التقييم\n)مصطلحات من المسرد ،وأسئلة بصياغة مختلفة ،ومصطلحات خارج المسرد( وإجاباتها ،وقارن قبل التدريب وبعده .ناقش مزايا تدريب النموذج وعيوبه مقارنًة بآلية البحث في المسرد\nطريقة العمل والتنبيهات :الشريحة التالية .التقديم في خانة »الواجب« في .lectures/02/answer.md\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 27"
+          },
+          {
+            "id": "lec02-exercise-p028",
+            "title": "طريقة العمل في الواجب والتنبيهات",
+            "page": 28,
+            "content": "طريقة العمل في الواجب والتنبيهات\nعند تغيير الإعدادات أو البيانات، وحّد شروط المقارنة وأعد التنفيذ من البداية.\nأساسي: بعد تغيير الإعدادات اختر Runtime → Restart session ثم شغّل من الأعلى. قارن ملفي result.json.\nتنفيذ: حضّر أسئلة بلا سند بنفسك واشرح كيف حضرتها.\nمتقدم: شغّل في Codespaces الأمر:\nuv run python scripts/make_sft_dataset.py > glossary_sft.jsonl\nارفع الملف إلى Colab. كل سطر بصيغة messages، مثل to_chat، ولذلك يمكن تمريره مباشرةً إلى Dataset.from_list وتشغيل SFTTrainer في القسم 4. أنشئ بيانات التقييم test وgold من جديد بما يناسب مسرد المصطلحات.\nتنبيه 1: بعد التدريب يكون المحوّل مركبًا أيضًا في المتغير model. لاستعادة مخرجات ما قبل التدريب، استخدم tuned.disable_adapter() (القسم 6) أو أعد تشغيل الجلسة.\nتنبيه 2: تُثبّت إصدارات المكتبات عند الإصدارات المختبرة في PINS (القسم 0). قد يتعطل التنفيذ عند تغييرها.\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 28"
+          },
+          {
+            "id": "lec02-exercise-p029",
+            "title": "تسليم الواجب",
+            "page": 29,
+            "content": "تسليم الواجب\nتقديم الواجب\nاكتب في خانة »الواجب« في  lectures/02/answer.md نفسه المستخدم في التمرين وقدّمه.\nالموعد النهائي :أسبوع من يوم المحاضرة كقاعدة عامة\nما تكتبه في قسم »الواجب« في answer.md\n• المستوى الذي اخترته )أساسي  /تنفيذ  /متقدم(  الإنجاز :يكفي مستوى واحد\n• الإعدادات أو البيانات التي غيّرتها  أدوات الذكاء الاصطناعي :مسموحة .اذكر ما تحققت منه بنفسك\n• النتائج )جدول مقارنة أو أرقام(\n• تحليل متى يناسب الضبط الدقيق ومتى لا يناسب\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 29"
+          },
+          {
+            "id": "lec02-exercise-p030",
+            "title": "تمهيد للمحاضرة الثالثة",
+            "page": 30,
+            "content": "تمهيد للمحاضرة الثالثة\nتمهيد للمحاضرة 3\nوكيلا.\nً  في المحاضرة  3 نبني\nهذه المرة  المحاضرة 3\n→\nتدريب النموذج لتغيير طريقة إجابته  بناء »وكيل يبحث في مسرد المصطلحات«\nتفاصيل محتوى المحاضرة  3 والتحضير لها في مواد المحاضرة 3\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 30"
+          },
+          {
+            "id": "lec02-exercise-p031",
+            "title": "خلاصة إنجاز اليوم والمحاضرة التالية",
+            "page": 31,
+            "content": "خلاصة إنجاز اليوم والمحاضرة التالية\nالخلاصة :ما وصلنا إليه اليوم والمحاضرة القادمة\nتحققنا بنتائجنا مما غيّره التدريب وما لم يغيّره.\n1  2  3\nالشكل يتغير ببضع دقائق من تدريب LoRA  الحكم فيما لا يعرفه )طلب التأكد أم الجزم( غير مضمون  اشرح بنتائجك متى يناسب الضبط الدقيق ومتى لا يناسب\nالواجب :مستوى واحد من أساسي  /تنفيذ  /متقدم .الموعد النهائي أسبوع من يوم المحاضرة كقاعدة  المحاضرة  :3 بناء وكيل\nعامة\nاحذف وقت التشغيل في  Colab بعد الانتهاء\n© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO",
+            "citation": "المحاضرة 2: التمارين والواجبات · ملف PDF المترجم، ص. 31"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "lec03-exercise",
     "title": "بناء وكيل لدعم التعلم",
     "content": [
